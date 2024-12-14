@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="fontawesome-i2svg-active fontawesome-i2svg-complete">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/all.css">
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&family=Roboto:ital,wght@0,300;0,400;1,500&display=swap" rel="stylesheet">
+    <title>Healthy Food-Restaurant</title>
+
+</head>
+<body>
+  <!-- start header -->
+  <header class=" bg-light py-2 sticky-top">
+    <nav class="navbar navbar-expand-lg  ">
+      <div class="container d-flex flex-wrap align-items-center justify-content-between">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img class="" src="img/fav.png " alt="">
+          <h2 class="fw-bolder pt-2">الأكل الصحي </h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link py-3  active" aria-current="page" href="#">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  py-3" href="#menu">قائمة الطعام</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  py-3" href="#booking">احجز مقعدك</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  py-3" href="#contact">تواصل معنا</a>
+            </li>
+          </ul>
+          <div class="cart"onclick="openNav()"  ><i class="fa-solid fa-cart-shopping clickable" ></i><p id="count" >0</p></div>
+          <!-- كود الكارت بتاع ال side -->
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="sidebar">
+                <div class="head"><p>My Cart</p></div>
+                <div id="cartItem">Your cart is empty</div>
+                <div class="foot ">
+                    <h3>Total</h3>
+                    <h2 id="total">$ 0.00</h2>
+                </div>
+            </div>
+          </div>
+          <!-- /////نهايه كود الكارت -->
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- end header -->
+  <!-- start landing -->
+  <main class="landing py-5  ">
+    <div class="container pt-5 d-flex justify-content-between align-items-center">
+      <div class="text">
+          <h1 class="fw-bold">أشهى الوجبات الصحية</h1>
+          <h2>طعام صحي</h2>
+          <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة 
+            "نص تعريفي او تقديمي للموقع"</p>
+          <a href="#menu" class="btn main-btn mt-3 px-5 py-3">قائمة الطعام</a>
+      </div>
+      <div class="text">
+          <img  src="img/dish.png" alt="dish">
+      </div>
+  </div>
+  </main>
+  <!-- end landing -->
+  <!-- start advantages -->
+  <section class="advantages ">
+    <div class="container text-center py-5 ">
+      <h2 class="py-3">لماذا الأكل الصحي هو الافضل ؟</h2>
+      <div class="row py-5">
+        <div class="col-md-4">
+          <div class="box px-3">
+            <img src="img/adv-1-icon.svg" alt="">
+            <h5 class="fw-bold mt-3">طعام صحي</h3>
+            <p class="text-black-50">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى .</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box px-3">
+            <img src="img/adv-2-icon.svg" alt="">
+            <h5 class="fw-bold mt-3"> وصفات مميزة</h5>
+            <p class="text-black-50">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى .</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box px-3">
+            <img src="img/adv-3-icon.svg" alt="">
+            <h5 class="fw-bold mt-3">عروض حصرية</h5>
+            <p class="text-black-50">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى .</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end advantages -->
+  <!-- start menu -->
+  <section class="menu">
+    <div class="container py-5" id="menu">
+      <h2 class="mb-4">قائمة الطعام</h2>
+      <div class="links d-flex justify-content-between align-items-center">
+        <nav>
+          <a class="btn active ms-2 btn-small " href="#menu"> الافطار </a>
+          <a class="btn  ms-2 btn-small " href="#menu"> الغذاء</a>
+          <a class="btn ms-2 btn-small " href="#menu">العشاء</a>
+        </nav>
+        <a class="btn main-btn px-4 py-3" href="#menu">كل الوجبات</a>
+      </div>
+      <div class="row pt-4" id="root">
+        <!-- الوجبات -->
+      </div>
+    </div>
+  </section>
+  <!-- end menu -->
+  <!-- start order -->
+  <section class="order py-4" id="booking">
+    <div class="container py-5">
+      <div class="content text-center ">
+        <div class="content-book w-75 h-100 py-5">
+          <h2 class="text-white fw-bold mb-4">أحجز موقعك</h2>
+          <form action="#" class=" px-5 d-flex align-items-center justify-content-center">
+            <div class="book-box ms-4 text-end ">
+              <label class="mb-2"> التاريخ</label>
+              <br>
+              <input class="rounded px-2 py-1" type="date">
+            </div>
+            <div class="book-box ms-4 text-end ">
+              <label class="mb-2"> الوقت</label>
+              <br>
+              <input class="rounded px-2 py-1" type="time">
+            </div>
+            <div class="book-box ms-4 text-end ">
+              <label class="mb-2">العدد</label>
+              <br>
+              <select class="rounded px-3 py-2" name="num" id="num">
+                <option class="text-black" value="1">1</option>
+                <option class="text-black" value="2">2</option>
+                <option class="text-black" value="3">3</option>
+                <option class="text-black" value="4">4</option>
+                <option class="text-black" value="5">5</option>
+              </select>
+            </div>              
+          </form>
+          <button class="btn book-btn fw-bold mt-4 px-5 py-2"> احجز الآن</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end order -->
+  <!-- start review -->
+  <section class="review py-5 bg-light">
+    <div class="container ">
+      <h2 class="text-center fw-bolder">آراء عملاء </h2>
+      <div class="row pt-5">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="box shadow p-4 rounded-3">
+            <div class="info  d-flex align-items-center mb-2 ">
+            <img class="rounded-circle  " src="img/user1.png" alt="">
+            <div class="text me-2">
+              <h4 class="fw-bold"> محمد علي</h4>
+              <span> عميل مميز</span>
+            </div>
+            </div>
+            <p class="text-black-50 mt-3">
+              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل لنص هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة.
+            </p>
+            <div class="stars  d-flex align-items-center justify-content-end">
+              <img src="img/star.svg" alt="">
+              <img src="img/star.svg" alt="">
+              <img src="img/star.svg" alt="">
+              <img src="img/star.svg" alt="">
+              <img src="img/star.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="box shadow p-4 rounded-3">
+            <div class="info  d-flex align-items-center mb-2 ">
+            <img class="rounded-circle  " src="img/user1.png" alt="">
+            <div class="text me-2">
+              <h4 class="fw-bold"> محمد علي</h4>
+              <span> عميل مميز</span>
+            </div>
+            </div>
+            <p class="text-black-50 mt-3">
+              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل لنص هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة.
+            </p>
+            <div class="stars  d-flex align-items-center justify-content-end">
+              <img src="img/star.svg" alt="">
+              <img src="img/star.svg" alt="">
+              <img src="img/star.svg" alt="">
+              <img src="img/star.svg" alt="">
+              <img src="img/star.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="box shadow p-4 rounded-3">
+            <div class="info  d-flex align-items-center mb-2 ">
+            <img class="rounded-circle  " src="img/user1.png" alt="">
+            <div class="text me-2">
+              <h4 class="fw-bold"> محمد علي</h4>
+              <span> عميل مميز</span>
+            </div>
+            </div>
+            <p class="text-black-50 mt-3">
+              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل لنص هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة.
+            </p>
+            <div class="stars  d-flex align-items-center justify-content-end">
+              <img src="img/star.svg" alt="">
+              <img src="img/star.svg" alt="">
+              <img src="img/star.svg" alt="">
+              <img src="img/star.svg" alt="">
+              <img src="img/star.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end review -->
+  <!-- start contact -->
+  <section class="contact py-5" id="contact">
+    <div class="container  py-5">
+      <div class="content m-auto py-3 px-4 rounded-5 d-flex align-items-center justify-content-between w-75  ">
+        <div class="text2 w-75">
+          <h2> خدمة العملاء</h2>
+          <p class="text-black-50 mt-3">
+            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل لنص هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة.
+          </p>
+        </div>
+        <div class="button ">
+          <button class="btn main-btn px-5 py-3"> تواصل معنا</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end contact -->
+  <!-- start footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box text-center">
+            <div class=" logo  d-flex align-items-center justify-content-center" href="#">
+              <img class="" src="img/fork-and-knife.svg " alt="">
+              <h2 class="me-2">الأكل الصحي </h2>
+            </div>
+            <div class="social-links mt-3">                
+              <a href="#" class="link me-2">
+                <img src="img/facebook.svg" alt="" >
+              </a>
+              <a href="#" class="link me-2">
+                <img src="img/instagram.svg" alt="" >
+              </a>
+              <a href="#" class="link me-2">
+                <img src="img/twitter.svg" alt="" >
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <ul class="list-unstyled">
+            <li><h4>الخدمات</h3></li>
+            <li><a class="footer-link d-block mb-2 ">حجز طاولة</a></li>
+            <li><a class="footer-link d-block mb-2 ">خدمة العملاء</a></li>
+            <li><a class="footer-link d-block mb-2 ">المنتجات</a></li>
+            <li><a class="footer-link d-block mb-2 ">قائمة الطعام</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <ul class="list-unstyled">
+            <li><h4>الشركة</h4></li>
+            <li><a class="footer-link d-block mb-2 ">الوظائف </a></li>
+            <li><a class="footer-link d-block mb-2 "> شهادات الجودة</a></li>
+            <li><a class="footer-link d-block mb-2 ">المشاركة الاجتماعية</a></li>
+            <li><a class="footer-link d-block mb-2 "> عن الشركة</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <ul class="list-unstyled">
+            <li><h4>روابط</h3></li>
+            <li><a class="footer-link d-block mb-2 ">تواصل معنا </a></li>
+            <li><a class="footer-link d-block mb-2 "> سياسة الخصوصية</a></li>
+            <li><a class="footer-link d-block mb-2 ">سياسة الاستخدام</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copy bg-light p-2 text-secondary  ">
+    </div>
+  </footer>
+  <!-- end footer -->
+   <script src="js/addToCart.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+</body>
+</html>
